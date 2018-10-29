@@ -3,6 +3,62 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #888;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  letter-spacing: .0125em;
+  color: #555;
+  margin: .5em 0em;
+}
+
+h1 {
+  font-size: 3.25em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.15em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin: .5em 0em;
+  line-height: 1.25em;
+  letter-spacing: .0125em;
+}
+
+bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
 
 /* UTILITIES */
 .flex-wrap {
@@ -10,38 +66,163 @@
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.content {
+  margin: 1em 8px;
+}
+
+.content .sixty {
+  width:60%;
+}
+
+.content .forty {
+  width: 40%;
+}
+
+.container-fluid {
+  max-width: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.gray-back {
+  background-color: #ddd;
+}
+
+.white-back {
+  background-color: #fff;
+}
+
+.light-grey {
+  color: #777;
+}
+
+.dark-grey {
+  color: #222;
+}
+
+.full-height-background {
+  position: absolute;
+  top: 1em;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+}
+
+@media only screen and ( max-width: 768px ) {
+  .content .forty, .content .sixty {
+    width: auto;
+  }
+  .flex-wrap {
+    display: block;
+  }
 }
 
 /* HEADER */
 
-header {
+.header-content {
   display: flex;
-  width:100%;
   align-items: center;
   justify-content: space-between;
+  margin: 1em 1em;
 }
 
 header .logo {
   display: flex;
   align-items: center;
+  margin: 0px 8px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0px 8px;
+  color: #222;
 }
 
 
 /* HERO */
-.hero {
+.hero .content {
   align-items: center;
 }
 
-.hero img {
-  max-width:60%;
+.hero .content .banner-content {
+  margin: 1em;
+  color: #555;
 }
+
+.hero .content .banner-content p {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.hero .content .banner-content button {
+  width:100%;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: .5em;
+  font-weight: 500;
+  font-size: 1.25em;
+  margin: 1.5em 0em;
+}
+
 
 
 /* MAIN CONTENT : PRACTICE */
 
 .mobile {
   display:none;
+}
+.content .main-article, .content .main-content {
+  margin: 1em;
+}
+
+.content .sub-articles {
+  margin-bottom: 1.5em;
+  float:left;
+}
+
+.thesis .content .sub-articles {
+  margin: 1em 0em;
+}
+
+.content .sub-articles .sub-article {
+    display: flex;
+    align-items: center;
+    margin: .5em;
+    padding: .5em;
+    /* border: 1px solid #ddd; */
+}
+
+.content .sub-articles .sub-article:first-of-type {
+  margin-top: 0;
+}
+
+.content .sub-articles .sub-article img,
+.content .sub-articles .sub-article-content {
+  margin: .5em;
+}
+
+.content .sub-articles .sub-article-content h3{
+  display: block;
+  margin: 0.25em 0em;
+  margin-top: 0em;
+}
+
+.content .sub-articles .sub-article img {
+  width:35%;
+}
+
+.content .sub-articles .sub-article a {
+  text-decoration: none;
+  color: #3297B6;
 }
 
 @media only screen and ( max-width: 468px ) {
@@ -53,12 +234,73 @@ header .logo {
   }
 }
 
+/* GRID: Learning */
+.learning-grid-wrap .flex-wrap {
+  display: flex;
+}
+
+.learning-grid-wrap {
+  margin: 24px 56px;
+}
+
+.learning-grid-wrap .flex-wrap {
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.learning-card {
+  width: 33.33%;
+  position: relative;
+}
+
+.learning-card-inner {
+  margin: 1em;
+  position: relative;
+}
+
+.learning-card-content {
+  padding: 1em;
+}
+
+.learning-card .type {
+  text-transform: uppercase;
+}
+
+.section-header {
+  text-align: center;
+  margin-top: 1em;
+}
+
+@media only screen and ( max-width: 768px ) {
+  .learning-card {
+    width: 50%;
+  }
+}
+
+@media only screen and ( max-width: 550px ) {
+  .learning-card {
+    width: 100%;
+    max-width:300px;
+  }
+}
 
 /* FOOTER */
 
 footer {
+  border-top: 1px solid #ddd;
+  min-height: 80px;
+  margin: 0em 1em;
+}
+
+footer .footer-content {
   display: flex;
-  width:100%;
   align-items: center;
   justify-content: space-between;
+  margin: 1em;
+}
+
+@media only screen and ( max-width: 550px ) {
+  footer nav {
+    display: none;
+  }
 }

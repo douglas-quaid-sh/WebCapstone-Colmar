@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Colmar</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
   </head>
   <body>
 
     <!-- HEADER -->
-    <header>
-      <div class="logo">
+    <header class="container container-fluid">
+      <div class="header-content">
+        <div class="logo">
         <img src="./resources/images/ic-logo.svg"/>
-        Colmar Academy
+        <span class="uppercase logo-text dark-grey"><bold>Colmar</bold><span class="light-grey">Academy</span></span>
       </div>
-      <nav>
+        <nav>
         <span>
           <a href="">
             <span class="nav-text-item">
@@ -44,219 +46,283 @@
           </a>
         </span>
       </nav>
+      </div>
     </header>
 
     <!-- HERO -->
-    <section>
-      <div class="flex-wrap hero container">
-        <img src="./resources/images/banner.jpg" />
-        <div class="banner-content">
-          <h1>
-            Learn something new everyday
-          </h1>
-          <p>
-            paragraph
-          </p>
-          <button>
-            start here
-          </button>
+    <section class="full-width gray-back">
+      <div class=" hero container">
+        <div class="flex-wrap content">
+          <div class="sixty main-content">
+            <img class="" src="./resources/images/banner.jpg" />
+          </div>
+          <div class="sub-content forty">
+            <div class="banner-content">
+              <h1>
+                Learn something new everyday
+              </h1>
+              <p>
+                Integer libero arcu, molestie nec semper sed, luctus non elit.
+              </p>
+              <button>
+                Start Here
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Main Content: Practice-->
     <section>
-      <div class="flex-wrap">
-        <div class="main-article">
-        <img src="./resources/images/information-main.jpg" />
-        <h2>
-          It doesnt hurt to keep practicing
-        </h2>
-        <p>
-          paragraph
-        </p>
-        <div class='author'>
-          Emanuel, Sr. Strategist at Hiring.com
+      <div class=" container">
+        <div class="flex-wrap content">
+          <div class="main-article sixty">
+            <img src="./resources/images/information-main.jpg" />
+            <h2>
+              It doesnt hurt to keep practicing
+            </h2>
+            <p>
+              Sed ac lorem sit amet sapien viverra aliquam rutrum vitae leo. Integer libero arcu, molestie nec semper sed, luctus non elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec gravida elit eu turpis lacinia facilisis.
+            </p>
+            <div class='author'>
+              Emanuel, Sr. Strategist at Hiring.com
+            </div>
+          </div>
+          <div class="sub-articles forty">
+            <div class='sub-article'>
+              <img src="./resources/images/information-orientation.jpg" />
+              <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" />
+              <div class='sub-article-content'>
+                <h3>
+                  Orientation date
+                </h3>
+                <p>
+                  Tue 10/11 & Wed 10/12: 8am-3pm
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+            <div class='sub-article'>
+              <img src="./resources/images/information-campus.jpg" />
+              <img class="mobile" src="./resources/images/information-campus-mobile.jpg" />
+              <div class='sub-article-content'>
+                <h3>
+                  Our campus
+                </h3>
+                <p>
+                  Find which campus is close by you
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+            <div class='sub-article gray-back'>
+              <img src="./resources/images/information-guest-lecture.jpg" />
+              <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" />
+              <div class='sub-article-content'>
+                <h3>
+                  Our guest lecture
+                </h3>
+                <p>
+                  Join a keynote with Oliver Sack about music in medical treatment
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-        <div class="sub-articles">
-        <div class='sub-article'>
-          <img src="./resources/images/information-orientation.jpg" />
-          <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" />
-          <h3>
-            Orientation date
-          </h3>
-          <p>
-            Tue 10/11 & Wed 10/12: 8am-3pm
-          </p>
-          <a href="">
-            Read More
-          </a>
-        </div>
-        <div class='sub-article'>
-          <img src="./resources/images/information-campus.jpg" />
-          <img class="mobile" src="./resources/images/information-campus-mobile.jpg" />
-          <h3>
-            Our campus
-          </h3>
-          <p>
-            Find which campus is close by you
-          </p>
-          <a href="">
-            Read More
-          </a>
-        </div>
-        <div class='sub-article'>
-          <img src="./resources/images/information-guest-lecture.jpg" />
-          <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" />
-          <h3>
-            Our guest lecture
-          </h3>
-          <p>
-            Join a keynote with Oliver Sack about music in medical treatment
-          </p>
-          <a href="">
-            Read More
-          </a>
-        </div>
-      </div>
       </div>
     </section>
 
     <!-- Grid: Learning -->
-    <section>
-      <div class="flex-wrap">
-        <div class="learning-card">
-          <img src="./resources/images/course-software.jpg" />
-          <h3>
-            Software engineering
-          </h3>
-          <div class='type'>
-            Courses
+    <section class="full-width gray-back">
+      <div class=" container">
+        <h2 class="section-header">
+          Start learning
+        </h2>
+        <div class="learning-grid-wrap">
+          <div class="flex-wrap">
+          <div class="learning-card">
+            <div class="full-height-background white-back"></div>
+            <div class="learning-card-inner">
+              <img src="./resources/images/course-software.jpg" />
+              <div class="learning-card-content">
+                <h3>
+                  Software engineering
+                </h3>
+                <div class='type'>
+                  Courses
+                </div>
+                <p>
+                  Wub Development, Mobile Development, iOT, API's
+                </p>
+              </div>
+            </div>
           </div>
-          <p>
-            Wub Development, Mobile Development, iOT, API's
-          </p>
+          <div class="learning-card">
+            <div class="full-height-background white-back"></div>
+            <div class="learning-card-inner">
+              <img src="./resources/images/course-computer-art.jpg" />
+              <div class="learning-card-content">
+                <h3>
+                  Computer art
+                </h3>
+                <div class='type'>
+                  Courses
+                </div>
+                <p>
+                  Imaging & Design, Web Design, Motion Graphics & Visual Effexts, Computer Animation
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="learning-card">
+            <div class="full-height-background white-back"></div>
+            <div class="learning-card-inner">
+              <img src="./resources/images/course-design.jpg" />
+              <div class="learning-card-content">
+                <h3>
+                  Design
+                </h3>
+                <div class='type'>
+                  Courses
+                </div>
+                <p>
+                  user Experience Design, User Research, Visual Design
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="learning-card">
+            <div class="full-height-background white-back"></div>
+            <div class="learning-card-inner">
+              <img src="./resources/images/course-data.jpg" />
+              <div class="learning-card-content">
+                <h3>
+                  Data
+                </h3>
+                <div class='type'>
+                  Courses
+                </div>
+                <p>
+                  Data Science, Big Data, SQL, Data, Visualization
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="learning-card">
+            <div class="full-height-background white-back"></div>
+            <div class="learning-card-inner">
+              <img src="./resources/images/course-business.jpg" />
+              <div class="learning-card-content">
+                <h3>
+                  Business
+                </h3>
+                <div class='type'>
+                  Courses
+                </div>
+                <p>
+                  Product Development, Business Development, Startup
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="learning-card">
+            <div class="full-height-background white-back"></div>
+            <div class="learning-card-inner">
+              <img src="./resources/images/course-marketing.jpg" />
+              <div class="learning-card-content">
+                <h3>
+                  Marketing
+                </h3>
+                <div class='type'>
+                  Courses
+                </div>
+                <p>
+                  Analytics, Content Marketing, Mobile Marketing
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="learning-card">
-          <img src="./resources/images/course-computer-art.jpg" />
-          <h3>
-            Computer art
-          </h3>
-          <div class='type'>
-            Courses
-          </div>
-          <p>
-            Imaging & Design, Web Design, Motion Graphics & Visual Effexts, Computer Animation
-          </p>
-        </div>
-        <div class="learning-card">
-          <img src="./resources/images/course-design.jpg" />
-          <h3>
-            Design
-          </h3>
-          <div class='type'>
-            Courses
-          </div>
-          <p>
-            user Experience Design, User Research, Visual Design
-          </p>
-        </div>
-        <div class="learning-card">
-          <img src="./resources/images/course-data.jpg" />
-          <h3>
-            Data
-          </h3>
-          <div class='type'>
-            Courses
-          </div>
-          <p>
-            Data Science, Big Data, SQL, Data, Visualization
-          </p>
-        </div>
-        <div class="learning-card">
-          <img src="./resources/images/course-business.jpg" />
-          <h3>
-            Business
-          </h3>
-          <div class='type'>
-            Courses
-          </div>
-          <p>
-            Product Development, Business Development, Startup
-          </p>
-        </div>
-        <div class="learning-card">
-          <img src="./resources/images/course-marketing.jpg" />
-          <h3>
-            Marketing
-          </h3>
-          <div class='type'>
-            Courses
-          </div>
-          <p>
-            Analytics, Content Marketing, Mobile Marketing
-          </p>
         </div>
       </div>
     </section>
 
-    <!-- MainContent: Thesis -->
+    <!-- Main Content: Thesis -->
     <section>
-      <h2 class="section-header">
-        Thesis exhibit
-      </h2>
-      <div class="flex-wrap">
-        <div class="main-article">
-          <video src="./resources/videos/thesis.mp4" />
-          <h3>
-            Reimagine urban
-          </h3>
-          <p>
-            paragraph
-          </p>
-        </div>
-        <div class="sub-articles">
-        <div class='sub-article'>
-          <img src="./resources/images/thesis-fisma.jpg" />
-          <h3>
-            Fisma: Design and Prototype
-          </h3>
-          <p>
-            Designer showcase of new prototype product
-          </p>
-        </div>
-        <div class='sub-article'>
-          <img src="./resources/images/thesis-now-and-then.jpg" />
-          <h3>
-            Now and then
-          </h3>
-          <p>
-            research study about New York
-          </p>
-        </div>
+      <div class="container thesis">
+        <h2 class="section-header">
+          Thesis exhibit
+        </h2>
+        <div class="flex-wrap content">
+          <div class="sixty">
+            <div class="main-article ">
+              <video src="./resources/videos/thesis.mp4">
+              </video>
+              <h3>
+                Reimagine urban
+              </h3>
+              <p>
+                Sed ac lorem sit amet sapien viverra aliquam rutrum vitae leo. Integer libero arcu, molestie nec semper sed, luctus non elit.
+              </p>
+          </div>
+          </div>
+          <div class="forty">
+            <div class="sub-articles">
+            <div class='sub-article gray-back'>
+              <img src="./resources/images/thesis-fisma.jpg" />
+              <div class='sub-article-content'>
+                <h3>
+                  Fisma: Design and Prototype
+                </h3>
+                <p>
+                  Designer showcase of new prototype product
+                </p>
+              </div>
+            </div>
+            <div class='sub-article'>
+              <img src="./resources/images/thesis-now-and-then.jpg" />
+              <div class='sub-article-content'>
+                <h3>
+                  Now and then
+                </h3>
+                <p>
+                  research study about New York
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
-      <div class="copyright">
-        &copy; 2016 Colmar Academy. All rights reserved
+    <footer class="container container-fluid">
+      <div class="footer-content">
+        <div class="copyright">
+          &copy; 2016 Colmar Academy. All rights reserved
+        </div>
+        <nav>
+          <span>
+            <a href="">
+              Terms
+            </a>
+          </span>
+          <span>
+            <a href="">
+              Privacy
+            </a>
+          </span>
+        </nav>
       </div>
-      <nav>
-        <span>
-          <a href="">
-            Terms
-          </a>
-        </span>
-        <span>
-          <a href="">
-            Privacy
-          </a>
-        </span>
-      </nav>
-
     </footer>
 
   </body>
