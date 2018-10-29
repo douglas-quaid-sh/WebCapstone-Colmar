@@ -173,7 +173,11 @@ nav a {
   margin: 1.5em 0em;
 }
 
-
+@media only screen and ( max-width: 468px ) {
+  .hero .content .main-content {
+    margin: 0;
+  }
+}
 
 /* MAIN CONTENT : PRACTICE */
 
@@ -186,12 +190,9 @@ nav a {
 
 .content .sub-articles {
   margin-bottom: 1.5em;
-  float:left;
+  /* float:left; */
 }
 
-.thesis .content .sub-articles {
-  margin: 1em 0em;
-}
 
 .content .sub-articles .sub-article {
     display: flex;
@@ -224,13 +225,41 @@ nav a {
   text-decoration: none;
   color: #3297B6;
 }
+@media only screen and ( max-width: 768px ) {
+  .sub-articles  {
 
+  }
+}
 @media only screen and ( max-width: 468px ) {
   .sub-article img {
     display: none;
   }
-  .sub-article img.mobile {
+  .content .sub-articles .sub-article img.mobile {
     display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .content {
+    margin: 0;
+  }
+  .content .sub-articles .sub-article {
+    display: block;
+  }
+  .content .sub-articles .sub-article.gray-back {
+    background-color: transparent;
+  }
+}
+
+
+/* Thesis */
+
+.thesis .content .sub-articles {
+  margin: 1em 0em;
+}
+
+@media only screen and ( max-width: 550px ) {
+  .thesis .sub-articles {
+    display: none;
   }
 }
 
@@ -275,13 +304,34 @@ nav a {
   .learning-card {
     width: 50%;
   }
+
+  .learning-grid-wrap {
+    margin: .5em;
+  }
+
 }
 
 @media only screen and ( max-width: 550px ) {
   .learning-card {
     width: 100%;
-    max-width:300px;
   }
+
+  .grid.gray-back {
+    background-color: #fff;
+  }
+
+  .learning-card .learning-card-inner {
+        margin: .5em 1em;
+  }
+
+  .learning-card .learning-card-content {
+    background-color: #ddd;
+  }
+
+  .learning-card img, .learning-card p, .learning-card .type {
+    display: none;
+  }
+
 }
 
 /* FOOTER */
