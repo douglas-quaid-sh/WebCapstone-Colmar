@@ -123,8 +123,13 @@ bold {
   .flex-wrap {
     display: block;
   }
-}
 
+}
+@media only screen and ( max-width: 968px ) and ( min-width: 768px ) {
+  body {
+    font-size: 12px;
+  }
+}
 /* HEADER */
 
 .header-content {
@@ -187,7 +192,9 @@ nav a {
 .content .main-article, .content .main-content {
   margin: 1em;
 }
-
+.content .main-article.sixty h2 {
+  margin-top: 1em;
+}
 .content .sub-articles {
   margin-bottom: 1.5em;
   /* float:left; */
@@ -197,7 +204,7 @@ nav a {
 .content .sub-articles .sub-article {
     display: flex;
     align-items: center;
-    margin: .5em;
+    /* margin: .5em; */
     padding: .5em;
     /* border: 1px solid #ddd; */
 }
@@ -227,7 +234,13 @@ nav a {
 }
 @media only screen and ( max-width: 768px ) {
   .sub-articles  {
-
+  }
+   .content {
+    margin: 0;
+  }
+  .content .main-content {
+    margin: 0em;
+    margin-bottom: 1em;
   }
 }
 @media only screen and ( max-width: 468px ) {
@@ -239,9 +252,7 @@ nav a {
     width: 100%;
     margin: 0;
   }
-  .content {
-    margin: 0;
-  }
+
   .content .sub-articles .sub-article {
     display: block;
   }
@@ -249,6 +260,8 @@ nav a {
     background-color: transparent;
   }
 }
+
+
 
 
 /* Thesis */
@@ -289,6 +302,7 @@ nav a {
 
 .learning-card-content {
   padding: 1em;
+  padding-top: 0em;
 }
 
 .learning-card .type {
