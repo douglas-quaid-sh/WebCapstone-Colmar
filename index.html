@@ -7,45 +7,63 @@
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
   </head>
-  <body>
+  <body role="document">
 
     <!-- HEADER -->
     <header class="container container-fluid">
-      <div class="header-content">
-        <div class="logo">
-        <img src="./resources/images/ic-logo.svg"/>
-        <span class="uppercase logo-text dark-grey"><bold>Colmar</bold><span class="light-grey">Academy</span></span>
-      </div>
-        <nav>
-        <span>
-          <a href="">
-            <span class="nav-text-item">
-              On campus
-            </span>
+      <div class="header-content ">
+        <div class="desktop">
+          <div class="logo">
+            <img src="./resources/images/ic-logo.svg" alt="colmar logo" />
+            <span class="uppercase logo-text dark-grey"><bold>Colmar</bold><span class="light-grey">Academy</span></span>
+          </div>
+        </div>
+        <nav class="desktop">
+          <span>
+            <a role="link" href="">
+              <span class="nav-text-item">
+                On campus
+              </span>
+            </a>
+          </span>
+          <span>
+            <a role="link" href="">
+              <span class="nav-text-item">
+                Online
+              </span>
+            </a>
+          </span>
+          <span>
+            <a role="link" href="">
+              <span class="nav-text-item">
+                For companies
+              </span>
+            </a>
+          </span>
+          <span>
+            <a role="link" href="">
+              <span class="nav-text-item">
+                Sign-in
+              </span>
+            </a>
+          </span>
+        </nav>
+        <div class="mobile mobile-nav-wrap">
+          <nav class="mobile-nav">
+            <a role="link" href="">
+              <img src="./resources/images/ic-logo.svg" alt="colmar logo"/>
+            </a>
+            <a role="link" href="">
+              <img src="./resources/images/ic-on-campus.svg" alt="school desk icon"/>
+            </a>
+            <a role="link" href="">
+              <img src="./resources/images/ic-online.svg" alt="computer icon"/>
+            </a>
+            <a role="link" href="">
+              <img src="./resources/images/ic-login.svg" alt="semantic alt icon"/>
           </a>
-        </span>
-        <span>
-          <a href="">
-            <span class="nav-text-item">
-              Online
-            </span>
-          </a>
-        </span>
-        <span>
-          <a href="">
-            <span class="nav-text-item">
-              For companies
-            </span>
-          </a>
-        </span>
-        <span>
-          <a href="">
-            <span class="nav-text-item">
-              Sign-in
-            </span>
-          </a>
-        </span>
-      </nav>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -54,17 +72,17 @@
       <div class=" hero container">
         <div class="flex-wrap content">
           <div class="sixty main-content">
-            <img class="" src="./resources/images/banner.jpg" />
+            <img class="" src="./resources/images/banner.jpg" alt="students working" />
           </div>
           <div class="sub-content forty">
             <div class="banner-content">
-              <h1>
+              <h1 role="heading aria-level=1">
                 Learn something new everyday
               </h1>
               <p>
                 Integer libero arcu, molestie nec semper sed, luctus non elit.
               </p>
-              <button>
+              <button role="button">
                 Start Here
               </button>
             </div>
@@ -78,9 +96,9 @@
       <div class=" container">
         <div class="flex-wrap content">
           <div class="main-article sixty">
-            <img src="./resources/images/information-main.jpg" />
+            <img src="./resources/images/information-main.jpg" alt="young man reading" />
             <div class="main-article-content">
-              <h2>
+              <h2 role="heading aria-level=2">
                 It doesnt hurt to keep practicing
               </h2>
               <p>
@@ -93,47 +111,47 @@
           </div>
           <div class="sub-articles forty">
             <div class='sub-article'>
-              <img src="./resources/images/information-orientation.jpg" />
-              <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" />
+              <img src="./resources/images/information-orientation.jpg" alt="Students walking"  />
+              <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Students walking" />
               <div class='sub-article-content'>
-                <h3>
+                <h3 role="heading aria-level=3">
                   Orientation date
                 </h3>
                 <p>
                   Tue 10/11 & Wed 10/12: 8am-3pm
                 </p>
-                <a href="">
-                  Read More
+                <a role="link" href="">
+                  Read More<span class="arrow">&rarr;</span>
                 </a>
               </div>
             </div>
             <div class='sub-article'>
-              <img src="./resources/images/information-campus.jpg" />
-              <img class="mobile" src="./resources/images/information-campus-mobile.jpg" />
+              <img src="./resources/images/information-campus.jpg" alt="students studying" />
+              <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="students studying" />
               <div class='sub-article-content'>
-                <h3>
+                <h3 role="heading aria-level=3">
                   Our campus
                 </h3>
                 <p>
                   Find which campus is close by you
                 </p>
-                <a href="">
-                  Read More
+                <a role="link" href="">
+                  Read More<span class="arrow">&rarr;</span>
                 </a>
               </div>
             </div>
             <div class='sub-article gray-back'>
-              <img src="./resources/images/information-guest-lecture.jpg" />
-              <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" />
+              <img src="./resources/images/information-guest-lecture.jpg" alt="college professor" />
+              <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="college professor" />
               <div class='sub-article-content'>
-                <h3>
+                <h3 role="heading aria-level=3">
                   Our guest lecture
                 </h3>
                 <p>
                   Join a keynote with Oliver Sack about music in medical treatment
                 </p>
-                <a href="">
-                  Read More
+                <a role="link" href="">
+                  Read More<span class="arrow">&rarr;</span>
                 </a>
               </div>
             </div>
@@ -145,7 +163,7 @@
     <!-- Grid: Learning -->
     <section class="grid full-width gray-back">
       <div class=" container">
-        <h2 class="section-header">
+        <h2 role="heading aria-level=2" class="section-header">
           Start learning
         </h2>
         <div class="learning-grid-wrap">
@@ -153,9 +171,9 @@
           <div class="learning-card">
             <div class="full-height-background white-back"></div>
             <div class="learning-card-inner">
-              <img src="./resources/images/course-software.jpg" />
+              <img src="./resources/images/course-software.jpg" alt="computers" />
               <div class="learning-card-content">
-                <h3>
+                <h3 role="heading aria-level=3">
                   Software engineering
                 </h3>
                 <div class='type'>
@@ -170,9 +188,9 @@
           <div class="learning-card">
             <div class="full-height-background white-back"></div>
             <div class="learning-card-inner">
-              <img src="./resources/images/course-computer-art.jpg" />
+              <img src="./resources/images/course-computer-art.jpg" alt="cell phone" />
               <div class="learning-card-content">
-                <h3>
+                <h3 role="heading aria-level=3">
                   Computer art
                 </h3>
                 <div class='type'>
@@ -187,9 +205,9 @@
           <div class="learning-card">
             <div class="full-height-background white-back"></div>
             <div class="learning-card-inner">
-              <img src="./resources/images/course-design.jpg" />
+              <img src="./resources/images/course-design.jpg" alt="person holding camera" />
               <div class="learning-card-content">
-                <h3>
+                <h3 role="heading aria-level=3">
                   Design
                 </h3>
                 <div class='type'>
@@ -204,9 +222,9 @@
           <div class="learning-card">
             <div class="full-height-background white-back"></div>
             <div class="learning-card-inner">
-              <img src="./resources/images/course-data.jpg" />
+              <img src="./resources/images/course-data.jpg" alt="laptop" />
               <div class="learning-card-content">
-                <h3>
+                <h3 role="heading aria-level=3">
                   Data
                 </h3>
                 <div class='type'>
@@ -221,9 +239,9 @@
           <div class="learning-card">
             <div class="full-height-background white-back"></div>
             <div class="learning-card-inner">
-              <img src="./resources/images/course-business.jpg" />
+              <img src="./resources/images/course-business.jpg" alt="chess board" />
               <div class="learning-card-content">
-                <h3>
+                <h3 role="heading aria-level=3">
                   Business
                 </h3>
                 <div class='type'>
@@ -238,9 +256,9 @@
           <div class="learning-card">
             <div class="full-height-background white-back"></div>
             <div class="learning-card-inner">
-              <img src="./resources/images/course-marketing.jpg" />
+              <img src="./resources/images/course-marketing.jpg" alt="person using smart-watch" />
               <div class="learning-card-content">
-                <h3>
+                <h3 role="heading aria-level=3">
                   Marketing
                 </h3>
                 <div class='type'>
@@ -260,30 +278,27 @@
     <!-- Main Content: Thesis -->
     <section>
       <div class="container thesis">
-        <h2 class="section-header">
+        <h2 role="heading aria-level=2" class="section-header">
           Thesis exhibit
         </h2>
         <div class="flex-wrap content">
-          <div class="sixty">
-            <div class="main-article ">
-              <video src="./resources/videos/thesis.mp4">
-              </video>
-              <div class="main-article-content">
-                <h3>
-                  Reimagine urban
-                </h3>
-                <p>
-                  Sed ac lorem sit amet sapien viverra aliquam rutrum vitae leo. Integer libero arcu, molestie nec semper sed, luctus non elit.
-                </p>
-              </div>
+          <div class="main-article sixty">
+            <video src="./resources/videos/thesis.mp4" controls>
+            </video>
+            <div class="main-article-content">
+              <h3 role="heading aria-level=3">
+                Reimagine urban
+              </h3>
+              <p>
+                Sed ac lorem sit amet sapien viverra aliquam rutrum vitae leo. Integer libero arcu, molestie nec semper sed, luctus non elit.
+              </p>
             </div>
           </div>
-          <div class="forty">
-            <div class="sub-articles">
+          <div class="sub-articles forty">
             <div class='sub-article gray-back'>
-              <img src="./resources/images/thesis-fisma.jpg" />
+              <img src="./resources/images/thesis-fisma.jpg" alt="person working on paperwork" />
               <div class='sub-article-content'>
-                <h3>
+                <h3 role="heading aria-level=3">
                   Fisma: Design and Prototype
                 </h3>
                 <p>
@@ -292,9 +307,9 @@
               </div>
             </div>
             <div class='sub-article'>
-              <img src="./resources/images/thesis-now-and-then.jpg" />
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="skyscraper" />
               <div class='sub-article-content'>
-                <h3>
+                <h3 role="heading aria-level=3">
                   Now and then
                 </h3>
                 <p>
@@ -302,7 +317,6 @@
                 </p>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -316,12 +330,12 @@
         </div>
         <nav>
           <span>
-            <a href="">
+            <a role="link" href="">
               Terms
             </a>
           </span>
           <span>
-            <a href="">
+            <a role="link" href="">
               Privacy
             </a>
           </span>

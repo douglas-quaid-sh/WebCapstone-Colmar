@@ -52,6 +52,10 @@ p {
   letter-spacing: .0125em;
 }
 
+a span, button{
+  transition: all 350ms ease;
+}
+
 bold {
   font-weight: bold;
 }
@@ -117,19 +121,41 @@ bold {
   right: 1em;
 }
 
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
 @media only screen and ( max-width: 768px ) {
   .content .forty, .content .sixty {
     width: auto;
   }
+
   .flex-wrap {
     display: block;
   }
+
+}
+
+@media only screen and ( max-width: 576px ) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
 }
 
 @media only screen and ( max-width: 968px ) and ( min-width: 768px ) {
   body {
     font-size: 12px;
   }
+
 }
 
 /* HEADER */
@@ -153,8 +179,26 @@ nav a {
   color: #222;
 }
 
+.mobile-nav-wrap {
+  width:100%;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-nav a {
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover  {
+  color: #6fdcdc;
+}
 
 /* HERO */
+
 .hero .content {
   align-items: center;
 }
@@ -178,19 +222,22 @@ nav a {
   font-weight: 500;
   font-size: 1.25em;
   margin: 1.5em 0em;
+  cursor: pointer;
 }
 
-@media only screen and ( max-width: 468px ) {
+.hero .content .banner-content button:hover {
+  background-color: #6fdcdc;
+  color: #555;
+}
+
+@media only screen and ( max-width: 576px ) {
   .hero .content .main-content {
     margin: 0;
   }
+
 }
 
 /* MAIN CONTENT : PRACTICE */
-
-.mobile {
-  display:none;
-}
 
 .content .main-article, .content .main-content {
   margin: 1em;
@@ -206,11 +253,11 @@ nav a {
 }
 
 .content .sub-articles .sub-article {
-    display: flex;
-    align-items: center;
-    margin: .5em;
-    padding: .5em;
-    /* border: 1px solid #ddd; */
+  display: flex;
+  align-items: center;
+  margin: .5em;
+  padding: .5em;
+  /* border: 1px solid #ddd; */
 }
 
 .content .sub-articles .sub-article:first-of-type {
@@ -237,6 +284,19 @@ nav a {
   color: #3297B6;
 }
 
+.sub-article-content a:hover {
+  color: #6fdcdc;
+}
+
+.sub-article-content .arrow{
+  display: none;
+  padding-left: .5em;
+}
+
+.sub-article-content a:hover .arrow{
+  display: inline-block;
+}
+
 @media only screen and ( max-width: 768px ) {
   .sub-articles {
     max-width: 400px;
@@ -247,6 +307,7 @@ nav a {
   .content .sub-articles .sub-article-content {
     margin: .5em 0em;
   }
+
    .content {
     margin: 0;
   }
@@ -257,7 +318,7 @@ nav a {
   }
 
 }
-@media only screen and ( max-width: 468px ) {
+@media only screen and ( max-width: 576px ) {
   .sub-article img {
     display: none;
   }
@@ -292,7 +353,11 @@ nav a {
   margin: 1em 0em;
 }
 
-@media only screen and ( max-width: 550px ) {
+.thesis .content .main-article .main-article-content {
+  margin-top: 1.5em;
+}
+
+@media only screen and ( max-width: 576px ) {
   .thesis .sub-articles {
     display: none;
   }
@@ -334,6 +399,8 @@ nav a {
 .learning-card-content {
   padding: 1em;
   padding-top: 0em;
+  cursor: pointer;
+  transition: all .35s ease;
 }
 
 .learning-card .type {
@@ -345,6 +412,21 @@ nav a {
   margin-top: 1em;
 }
 
+.full-height-background,
+.learning-card,
+.learning-card-content h3 {
+  transition: all .35s ease;
+}
+
+.learning-card:hover .learning-card-content,
+.learning-card:hover .learning-card-content h3 {
+  color: #fff;
+}
+
+.learning-card:hover .full-height-background {
+  background-color: #6fdcdc;
+}
+
 @media only screen and ( max-width: 768px ) {
   .learning-card {
     width: 50%;
@@ -353,14 +435,17 @@ nav a {
   .learning-grid-wrap {
     margin: .5em;
   }
+
   .thesis .content .sub-articles  {
     max-width: 400px;
     margin: 0 auto;
     margin-bottom: 1.5em;
+    margin-top: 2em;
   }
+
 }
 
-@media only screen and ( max-width: 550px ) {
+@media only screen and ( max-width: 576px ) {
   .learning-card {
     width: 100%;
   }
@@ -377,6 +462,10 @@ nav a {
     background-color: #ddd;
   }
 
+  .learning-card .learning-card-content:hover {
+    background-color: #6fdcdc;
+  }
+
   .learning-card img, .learning-card p, .learning-card .type {
     display: none;
   }
@@ -384,7 +473,7 @@ nav a {
   .learning-card-content {
     padding-top: 1em;
   }
-  
+
 }
 
 /* FOOTER */
@@ -402,8 +491,9 @@ footer .footer-content {
   margin: 1em;
 }
 
-@media only screen and ( max-width: 550px ) {
+@media only screen and ( max-width: 576px ) {
   footer nav {
     display: none;
   }
+
 }
